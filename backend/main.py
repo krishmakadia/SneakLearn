@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 import joblib
 import numpy as np
+from fastapi.middleware.cors import CORSMiddleware
 
 # Load the trained model and encoders
 model = joblib.load("sneaker_model.pkl")
@@ -34,3 +35,12 @@ def predict(data: SneakerInput):
 
     prediction = model.predict(features)
     return {"hyped": int(prediction[0])}
+
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Or ["http://localhost:5500"] or your frontend port
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)

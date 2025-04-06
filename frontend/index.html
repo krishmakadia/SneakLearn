@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sneaker Hype Predictor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Sneaker Hype Predictor <span class="sneaker-icon">👟</span></h1>
+    
+    <p class="description">Enter sneaker details below to check if it's hyped!</p>
+    
+    <form id="hypeForm">
+      <div class="form-group">
+        <label for="retailPrice">Retail Price ($):</label>
+        <input type="text" id="retailPrice" class="form-control" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="salePrice">Sale Price ($):</label>
+        <input type="text" id="salePrice" class="form-control" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="releaseYear">Release Year:</label>
+        <input type="text" id="releaseYear" class="form-control" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="brand">Brand:</label>
+        <input type="text" id="brand" class="form-control" placeholder="e.g., Adidas" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="model">Model:</label>
+        <input type="text" id="model" class="form-control" placeholder="e.g., Yeezy Boost 350 V2" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="edition">Edition:</label>
+        <input type="text" id="edition" class="form-control" placeholder="e.g., Core Black White" required>
+      </div>
+      
+      <button type="submit" class="btn" id="predictBtn">
+        🔮 Predict
+      </button>
+    </form>
+    
+    <div class="footer">
+      Made with <span class="heart">❤️</span> for sneakerheads
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
