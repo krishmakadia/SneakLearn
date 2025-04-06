@@ -1,0 +1,41 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env
+.venv/
+env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Model and encoder pickle files
+*.pkl
+
+# Mac / Windows / Linux system files
+.DS_Store
+Thumbs.db
+
+# VSCode files
+.vscode/
+
+# FastAPI/Starlette log and restart files
+*.log
+*.pid
+*.db
+
+# Pytest cache
+.pytest_cache/
+
+# MyPy
+.mypy_cache/
+
+# pycache and other auto-generated folders
+**/__pycache__/
+
+# local config or secret
+config.json
+secrets.json
